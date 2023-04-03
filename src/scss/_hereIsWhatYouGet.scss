@@ -1,0 +1,137 @@
+.people-get {
+    &__container {
+        @include container-padding;
+    }
+    &__title {
+        @include people-get-title-320;
+        margin-bottom: 36px;
+        &::after {
+            content: ">";
+        }
+        &::before {
+            content: "<";
+        }
+    }
+    &__title--hide {
+        display: none;
+    }
+}
+
+.people-about {
+    overflow: hidden;
+    &__img {
+        margin: 0 auto;
+    }
+    &__section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 27px;
+    }
+    &__uptitle {
+        @include people-get-uptitle-320;
+        margin-bottom: 14px
+    }
+    &__uptext {
+        @include people-get-uptext-320;
+    }
+    &__down-block {
+        display: flex;
+        justify-content: center;
+    }
+    &__background {
+        min-width: 317px;
+        max-width: 700px;
+
+    }
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+    .people-about {
+        &__section {
+            flex-direction: row;
+            align-items: center;
+        }
+        &__text-block {
+            align-items: flex-start;
+            width: 80%;
+        }
+        &__uptext {
+            text-align: start;
+        }
+        &__down-block {
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__img {
+            height: 100%;
+        }
+    }
+    .people-get {
+        &__title {
+            font-size: 42px;
+            line-height: 44px;
+        }
+    }
+}
+
+@media (min-width: 993px){
+    .people-about {
+        display: flex;
+            &__section {
+                flex-direction: row;
+                align-items: center;
+            }
+    
+            &__text-block {
+                align-items: flex-start;
+                width: 70%;
+            }
+    
+            &__uptext {
+                text-align: start;
+            }
+    
+            &__img {
+                height: 100%;
+            }
+            &__up-block {
+                width: 50%;
+            }
+            &__down-block {
+                width: 50%;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+        }
+        .people-get {
+            background: #F4F4F4 ;
+            padding-top: 94px;
+            &__title {
+                display: none;
+                font-size: 48px;
+                line-height: 50px;
+            }
+            &__title--hide {
+                display: block;
+                margin-bottom: 0;
+                
+            }
+        }
+}
+
+@media (min-width: 1200px) {
+   .revolutionary-container {
+    max-width: 1200px;
+    margin: 0 auto;
+   }
+   .people-get__container {
+    max-width: 1200px;
+    margin: 0 auto;
+   }
+}

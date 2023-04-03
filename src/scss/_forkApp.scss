@@ -1,0 +1,364 @@
+.fork-app {
+    height: 103px;
+    background: #27262A;
+    &__container {
+        @include container-padding;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 32px;
+    }
+    &__main-about {
+        background: url(../../dist/images/header_background.png);
+        height: 615px;
+        @include background-settings;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.burg-line {
+    &__short {
+        width: 15px;
+        height: 3px;
+        background-color: #FFFFFF;
+        border-radius: 40px;
+        transition: 0.5s;
+    }
+    &__top {
+        min-width: 26px;
+        height: 3px;
+        background-color: #FFFFFF;
+        border-radius: 40px;
+        margin-top: 6px;
+        transition: 0.5s;
+    }
+    &__bot {
+        min-width: 26px;
+        height: 3px;
+        background-color: white;
+        border-radius: 40px;
+        margin-top: 6px;
+        transition: 0.5s;
+    }
+}
+
+.burg-line__short--active {
+    opacity: 0;
+}
+
+.burg-line__top--active {
+    margin-top: 0;
+    transform: translateY(0) rotate(45deg);
+    transition: 0.5s;
+}
+
+.burg-line__bot--active {
+    margin-top: 0;
+    transform: translateY(0) rotate(-45deg);
+    transition: 0.5s;
+    position: absolute;
+    top: 3px;
+}
+
+.fork-header {
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #8D81AC;
+        border-radius: 40px;
+        height: 37px;
+        width: 119px;
+    }
+    &__burg-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+    }
+    &__btn-text {
+        @include header-btn-text-320;
+    }
+    &__nav-tablet--hide {
+        display: none;
+    }
+}
+
+.logo-block {
+    &__title {
+        @include fork-logo;
+    }
+    &__title--hide {
+        display: none;
+    }
+}
+.fork-main {
+    &__nav-desktop {
+        display: none;
+    }
+    &__container {
+        @include container-padding;
+        position: relative;
+        height: 100%;
+    }
+    &__info-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__btns-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: -68px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__download-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 290px;
+        height: 45px;
+        background: #8D81AC;
+        border-radius: 40px;
+    }
+    &__trial-text {
+        @include trial-text;
+        padding-top: 13px;
+    }
+    &__download-text {
+        @include download-btn-text;
+    }
+}
+.info-block {
+    &__title {
+        @include fork-main-title-320;
+        margin-top:50px; 
+    }
+    &__text {
+        @include fork-main-text-320;
+        margin-top: 19px;
+    }
+    &__sub-text {
+        @include fork-main-sub-text-320;
+        margin-top: 14px;
+    }
+}
+
+.fork {
+    &__dropdown-menu {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: -292px;
+        width: 292px;
+        margin: 0 auto;
+        transition: 0.5s;
+    }
+    &__dropdown-menu--visible {
+        right: 0;
+    }
+    &__list {
+        background: #333333;
+        height: 100%;
+    }
+    &__item {
+        @include dropdown-items;
+        width: 292px;
+        height: 88px;
+        width: 100%;
+        border-bottom: 3px solid #3B3B3B;
+    }
+    &__item-link {
+        @include links-none;
+        @include dropdown-items;
+        width: 100%;
+        margin-left: 35px;
+        &:active, &:focus {
+            color: #8D81AC;
+            &::before {
+                content: '';
+                background-color: #8D81AC;
+                width: 8px;
+                height: 53px;
+                position: absolute;
+                left: 2px;
+            }
+            }
+    }
+}
+
+@media (min-width: 481px) {
+    .fork-app {
+        height: 118px;
+        &__header {
+            flex-wrap: wrap;
+            padding-top: 22px;
+        }
+    }
+    .fork-header {
+        &__logo-block {
+            display: flex;
+            align-items: center;
+        }
+        &__burg-container--hide-tablet {
+            display: none;
+        }
+        &__btn {
+            min-width: 145px;
+        }
+        &__nav-tablet {
+            display: flex;
+            margin-top: 22px;
+            width: 100%;
+        }
+        &__nav-list {
+            @include links-none;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        &__nav-link {
+            @include links-none;
+            @include nav-tablet-item;
+        }
+        
+    }
+    .fork-main {
+        &__download-btn {
+            width: 390px;
+            height: 62px;
+        }
+        &__download-text {
+            font-size: 21px;
+            line-height: 23px;
+        }
+    }
+    .logo-block {
+        &__title {
+            margin-left: 17px;
+        }
+        &__title--hide {
+        display: block;
+        }
+    }
+    .fork {
+        &__dropdown-menu {
+            display: none;
+        }
+    }
+    .info-block {
+        &__title {
+            margin-top: 69px;
+            font-size: 72px;
+            line-height: 72px;
+        }
+        &__text {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (min-width: 993px) {
+    .fork-app--hide-desktop {
+        display: none;
+    }
+    .fork-app {
+        &__main-about {
+            background-attachment: fixed;
+        }
+    }
+    .fork-main {
+        &__nav-desktop {
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__download-btn {
+            &:hover {
+                cursor: pointer;
+                background-color: $hover;
+                border: 3px solid $hover-pink;
+                .fork-main__download-text {
+                    color: $hover-pink;
+                }
+            }
+        }
+    }
+    .fork-header {
+        &__nav-tablet {
+            margin-top: 0;
+        }
+        &__btn {
+            min-width: 145px;
+            &:hover {
+                cursor: pointer;
+                    background-color: $hover;
+                    .fork-header__btn-text {
+                        color: $hover-pink;
+                    }
+                }
+        }
+        &__nav-link {
+            margin-right: 48px;
+            &:hover {
+                color: $hover;
+            }
+        }
+        &__nav-list {
+            align-items: center;
+        }
+        &__nav-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__main-logo {
+            background: url(../../dist/images/header_logo.png);
+            background-position: center;
+            width: 43px;
+            height: 41px;
+        }
+        &__logo-block {
+            &:hover {
+                cursor: pointer;
+                .logo-block__title {
+                    color: aliceblue;
+                }
+                .fork-header__main-logo {
+                    background: url(../../dist/images/logo-hover.png);
+                    background-position: center;
+                    width: 43px;
+                    height: 41px;
+                }
+            }
+        }
+    }
+        .info-block {
+            &__title {
+                margin-top: 127px;
+                font-size: 82px;
+                line-height: 82px;
+            }
+            &__text {
+                font-size: 30px;
+                line-height: 30px;
+            }
+            &__sub-text {
+                font-size: 16px;
+                line-height: 16px;
+            }
+        }
+}
+
+@media (min-width: 1200px) {
+    .fork-main__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

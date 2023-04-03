@@ -1,0 +1,87 @@
+.about-fork {
+    background: url(../../dist/images/footer_background.png);
+    @include background-settings;
+    &__container {
+        @include container-padding;
+    }
+    &__title {
+        @include about-fork-title;
+        justify-content: center;
+        padding-top: 57px;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: baseline;
+        justify-items: center;
+        margin-top: 53px;
+    }
+    &__content-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 45px;
+    }
+    &__block-text {
+        @include about-fork-block-text;
+        margin-top: 33px;
+    }
+    &__bottom-text {
+        @include about-fork-bottom-text;
+        max-width: 887px;
+        margin-top: 37px;
+        padding-bottom: 38px;
+        margin: 0 auto;
+    }
+    &__bot-line {
+        margin: 0 auto;
+        background-color: #645766;
+        height: 2px;
+        width: 245px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 481px) {
+    .about-fork {
+        &__content {
+            grid-template-columns: 1fr 1fr;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+        &__content-block {
+            max-width: 315px;
+        }
+        &__bottom-text {
+            margin-top: 68px;
+        }
+        &__title {
+            padding-top: 86px;
+            font-size: 42px;
+            line-height: 44px;
+        }
+    }
+}
+
+@media (min-width: 993px) {
+    .about-fork {
+        &__content {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        &__content-block {
+            margin-top: 116px;
+        }
+        &__title {
+            padding-top: 108px;
+            font-size: 48px;
+            line-height: 50px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-fork__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

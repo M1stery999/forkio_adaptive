@@ -1,0 +1,286 @@
+@mixin container-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@mixin background-settings {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin links-none {
+    list-style: none;
+    text-decoration: none;
+}
+
+@mixin title-conf-320 {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #635C73;
+}
+
+@mixin text-conf-320 {
+font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #323232;
+}
+
+@mixin people-get-title-320 {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        align-items: center;
+        text-align: center;
+        color: #8D81AC;
+}
+
+@mixin people-get-uptext-320 {
+font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #848E97;
+}
+
+@mixin people-get-uptitle-320 {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        align-items: center;
+        color: #323232;
+}
+
+@mixin fork-title-320 {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+}
+
+@mixin card-title-320 {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+}
+
+@mixin card-price-320 {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 62px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+}
+
+@mixin card-month-320 {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+}
+
+@mixin card-license-320 {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+}
+
+@mixin card-purchase-320 {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+}
+
+@mixin fork-logo {
+    font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #8D81AC;
+}
+
+@mixin header-btn-text-320 {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 15px;
+        color: #FFFFFF;
+}
+
+@mixin fork-main-title-320 {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+}
+
+@mixin fork-main-text-320 {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #8D81AC;
+}
+
+@mixin fork-main-sub-text-320 {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #848E97;
+}
+
+@mixin download-btn-text {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+}
+
+@mixin trial-text {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #848E97;
+}
+
+@mixin dropdown-items {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+}
+
+@mixin nav-tablet-item {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #8D81AC;
+}
+
+@mixin about-fork-title {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+}
+
+@mixin about-fork-bottom-text {
+    font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-align: center;
+        color: #A291A5;
+}
+
+@mixin about-fork-block-text {
+    font-family: 'Lato';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+}
